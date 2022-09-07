@@ -1,17 +1,36 @@
 class putns:
-    def __init__(self,wing,beak):
-        self.wing = sparni
-        self.beak = knabis
+    def __init__(self,name,password,i):
+        self.name = name
+        self.passw = password
+        self.id = i
     def drukaLielu(self):
-        print("This avian has " + str(self.wing) + " wings" )
+        print("This avian's name is " + str(self.name))
     def drukaLielaku(self):
-        print("This avian has a " + str(self.beak) + " beak" )
+        print("This avian's password is " + str(self.passw))
         
         
-sparni = "large" 
-knabis = "larger" 
-birdd = putns(sparni,knabis)
 
 
-birdd.drukaLielaku()
-birdd.drukaLielu()
+class slave(putns):
+    def drukaMazu(self):
+        print("Slave " + str(self.name) + " created")
+    def printId(self):
+        print("Id is " + str(self.id))
+
+class admin(slave):
+    def drukaLielumu(self):
+        print("Admin "+ str(self.name)+" created")
+
+        
+        
+        
+        
+name = "large" 
+password = "slinky" 
+_id = "1" 
+avian = admin(name,password,i)
+
+avian.drukaLielumu()
+avian.drukaLielu()
+avian.drukaLielaku()
+avian.printId()
