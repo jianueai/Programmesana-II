@@ -1,0 +1,17 @@
+class putns:
+    def __init__(self,wing,beak):
+        self.wing = sparni
+        self.beak = knabis
+    def drukaLielu(self):
+        print("This avian has " + str(self.wing) + " wings" )
+    def drukaLielaku(self):
+        print("This avian has a " + str(self.beak) + " beak" )
+        
+        
+sparni = "large" 
+knabis = "larger" 
+birdd = putns(sparni,knabis)
+
+
+birdd.drukaLielaku()
+birdd.drukaLielu()
