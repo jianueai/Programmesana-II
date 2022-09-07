@@ -1,20 +1,18 @@
+import math
 class RightTriangle:
-    def __init__(self,h,w,hy):
-        self.height = h
-        self.width = w
-        self.hypotenuse = hy
-    def areaCalc(self,w,h):
-        print("Area is " + str((w*h)/2))
-    def Perimeter(self,h,w,hy):
-        print("Perimeter is " + str(h+w+hy))
+    def __init__(self,s1,s2,s3):
+        self.side1 = s1
+        self.side2 = s2
+        self.side3 = s3
+    def areaCalc(self,s1,s2):
+        print("Area is " + str((s1*s2)/2))
+    def Perimeter(self,s1,s2,s3):
+        print("Perimeter is " + str(s1+s2+s3))
                  
-h = 3 
-w = 4
-hy = 5
+s1 = 3 
+s2 = 4
+s3 = math.sqrt(s1^2+s2^2)
 
-tri = RightTriangle(w,h,hy)
-tri.areaCalc(w,h)
-tri.Perimeter(w,h,hy)      
-
-class Square:
-    def areaCalc(self,w,h)
+tri = RightTriangle(s1,s2,s3)
+tri.areaCalc(s1,s2)
+tri.Perimeter(s1,s2,s3)      
