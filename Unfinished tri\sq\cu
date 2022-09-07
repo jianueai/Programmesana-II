@@ -1,0 +1,20 @@
+class RightTriangle:
+    def __init__(self,h,w,hy):
+        self.height = h
+        self.width = w
+        self.hypotenuse = hy
+    def areaCalc(self,w,h):
+        print("Area is " + str((w*h)/2))
+    def Perimeter(self,h,w,hy):
+        print("Perimeter is " + str(h+w+hy))
+                 
+h = 3 
+w = 4
+hy = 5
+
+tri = RightTriangle(w,h,hy)
+tri.areaCalc(w,h)
+tri.Perimeter(w,h,hy)      
+
+class Square:
+    def areaCalc(self,w,h)
