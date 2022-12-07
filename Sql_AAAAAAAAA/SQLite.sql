@@ -1,8 +1,11 @@
 DROP table IF EXISTS demo;
 DROP table IF EXISTS Klients;
 DROP table IF EXISTS Produkts;
-DROP table IF EXISTS
-DROP table IF EXISTS Klients;
+DROP table IF EXISTS Grafiks;
+DROP table IF EXISTS Darbinieks;
+DROP table IF EXISTS Pasutijums;
+DROP table IF EXISTS Grozs;
+
 
 Create TABLE Klients(
   Klienta_ID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -66,5 +69,12 @@ CREATE table Grafiks(
    FOREIGN KEY(Pasutijuma_ID) REFERENCES Pasutijums(Pasutijuma_ID)
  );
 
-  
-  
+/*pasutitaju dati */
+INSERT INTO Klients(Vards, Uzvards, Adrese, E_pasts, Parole, Telefona_nr)
+VALUES('Jānis','Rakstnieks','Latvija, Rīga, luksusa iela 9', 'jurka01@gmail.com', 'Juristi321', '+37128754492');
+INSERT INTO Klients(Vards, Uzvards, Adrese, E_pasts, Parole, Telefona_nr)
+VALUES('Aldris','Zemgals','Latvija, Jēkapbils, jūras iela 2', 'aldaris@gmail.com', 'ctrlcctrlv', '+37126572788');
+
+/*produktu dati*/
+ins
+       
