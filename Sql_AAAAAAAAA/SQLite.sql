@@ -76,5 +76,49 @@ INSERT INTO Klients(Vards, Uzvards, Adrese, E_pasts, Parole, Telefona_nr)
 VALUES('Aldris','Zemgals','Latvija, Jēkapbils, jūras iela 2', 'aldaris@gmail.com', 'ctrlcctrlv', '+37126572788');
 
 /*produktu dati*/
-ins
+INSERT INTO Produkts(Nosaukums, Skaits, Cena)
+VALUES('MAXI COLOR nagu laka', 167, 1.69);
+INSERT INTO Produkts(Nosaukums, Skaits, Cena)
+VALUES('NUDE VELOUR nagu laka', 87, 0.99);
+INSERT INTO Produkts(Nosaukums, Skaits, Cena)
+VALUES('GOSH velvet touch lūpu krāsa', 207, 9.49);
+INSERT INTO Produkts(Nosaukums, Skaits, Cena)
+VALUES('SUPERDRUG Seduce dezodorants', 15, 1.59);
        
+/*Grafika dati*/
+INSERT INTO Grafiks(Diena, Mainas_Sakums, Mainas_Beigas)
+VALUES(1, '09:00', '17:00');
+INSERT INTO Grafiks(Diena, Mainas_Sakums, Mainas_Beigas)
+VALUES(2, '10:00', '15:00');
+INSERT INTO Grafiks(Diena, Mainas_Sakums, Mainas_Beigas)
+VALUES(3, '12:00', '18:00');
+INSERT INTO Grafiks(Diena, Mainas_Sakums, Mainas_Beigas)
+VALUES(4, '16:00', '21:00');
+INSERT INTO Grafiks(Diena, Mainas_Sakums, Mainas_Beigas)
+VALUES(5, '09:20', '14:20');
+INSERT INTO Grafiks(Diena, Mainas_Sakums, Mainas_Beigas)
+VALUES(6, '10:40', '16:20');
+INSERT INTO Grafiks(Diena, Mainas_Sakums, Mainas_Beigas)
+VALUES(7, '15:00', '20:00');
+
+/*Darbinieka dati*/
+INSERT INTO Darbinieks(Vards, Uzvards, Darbinieka_Telefona_nr)
+VALUES('Dāvis','Karpa', +37129873465);
+INSERT INTO Darbinieks(Vards, Uzvards, Darbinieka_Telefona_nr)
+VALUES('Kristofers','Kaufelds', +37129353421);
+INSERT INTO Darbinieks(Vards, Uzvards, Darbinieka_Telefona_nr)
+VALUES('Burgundi','Arhitekts', +37127773205);
+
+/*Pasutijums*/
+INSERT INTO Pasutijums(Preces_sanemsana)
+VALUES('Veikalā');
+INSERT INTO Pasutijums(Preces_sanemsana)
+VALUES('Piegāde');
+
+SELECT * FROM Klients;
+SELECT * FROM Produkts;
+SELECT * FROM Grafiks;
+SELECT * FROM Darbinieks;
+SELECT * FROM Pasutijums;
+SELECT * FROM Grozs;
+
